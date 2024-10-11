@@ -1,0 +1,67 @@
+/*Author: Kyle Huang 2024*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.blue-button {
+    box-shadow: 0px 10px 0px 0px #110a61;
+}
+
+.grey-button {
+    box-shadow: 0px 10px 0px 0px #1d2025;
+}
+
+.blue-button:hover {
+    transform: translateY(10px);
+}
+.grey-button:hover {
+    transform: translateY(10px);
+}
+.gui-image {
+    -webkit-mask-image: linear-gradient(#000, rgba(0,0,0,0) 70%);
+    mask-image: linear-gradient(#000, rgba(0,0,0,0) 80%);
+    position: relative;
+    transform: scale(2);
+    top: 90px;
+    left: 80px;
+}
+.hero-flyer {
+    border-radius:25px; 
+    margin: 40px auto 50px auto;
+}
+.hero-body-text {
+    color: #FFF;
+    font-size: 0.9em;
+    max-width: 640px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+@media screen and (max-width:500px){
+    .gui-image {
+        left: 50px;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    .gui-image {
+        left: 40px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hero-body-text {
+        font-size: 1.2em;
+        max-width: 950px;
+    }
+}
